@@ -1,14 +1,15 @@
-municipios = {
-    "la lima": 28000,
-    "san Manuel": 180989,
-    "la paz": 9000,
-    "San Pedro Sula": 1200000,
-    "la guadalupe": 94500,
-    
+cabecera  = {
+    "Copan" : "Santa Rosa de Copan" ,
+    "Cortes" : "San Pedro Sula" ,
+    "Choluteca" : "Choluteca" ,
+    "Santa Barbara" : "Santa Barbara" ,
+    "Valle" : "Nacaome" ,
+    "Yoro" : "Yoro"
 }
-
 try:
-    municipios2 = input("Ingrese municipio: ")
-    print("La poblacion de {} tiene {} habitantes.".format(municipios2, format(municipios[municipios2], ",d")))
+    print ("Cabeceras de Honduras")
+    print ("Ingrese Nombre de Un Departamento para Ver la Cabecera Correspondiente")
+    departamento = input("Ingresar: ")
+    print("La Cebecera de {} es  {} .".format(departamento, format(cabecera[departamento],)))
 except KeyError:
-    print("El municipio no existe.")
+    print("El Pais no existe") 
